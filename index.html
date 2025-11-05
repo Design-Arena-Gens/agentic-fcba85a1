@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaGPU Cloud ? Blazing Fast GPU Infrastructure</title>
+  <meta name="description" content="Modern GPU cloud built for AI workloads. On-demand A100/H100, predictable pricing, global low-latency, and beautiful developer experience." />
+  <meta name="theme-color" content="#5122ff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+  <meta property="og:title" content="NovaGPU Cloud ? Blazing Fast GPU Infrastructure" />
+  <meta property="og:description" content="Spin up A100/H100 in seconds with predictable pricing and global performance." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://agentic-fcba85a1.vercel.app" />
+  <meta property="og:image" content="https://agentic-fcba85a1.vercel.app/og.png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <div class="gradient-bg" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="NovaGPU homepage">
+        <span class="logo">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8B5CF6"/>
+                <stop offset="1" stop-color="#2563EB"/>
+              </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="20" height="20" rx="6" stroke="url(#g)" stroke-width="2"/>
+            <path d="M8 12h8M12 8v8" stroke="url(#g)" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">NovaGPU</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#benchmarks">Benchmarks</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn-ghost" href="#contact">Contact</a></li>
+          <li><a class="btn btn-solid" href="#cta">Start free</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="cta">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">GPU Cloud for AI builders</p>
+          <h1>Spin up H100-class performance in seconds</h1>
+          <p class="subtitle">On-demand, low-latency GPU instances with predictable pricing and a developer experience that just works.</p>
+          <div class="cta-row">
+            <a class="btn btn-solid" href="#pricing">Launch a GPU</a>
+            <a class="btn btn-ghost" href="#features">Explore features</a>
+          </div>
+          <div class="hero-bullets">
+            <div class="bullet"><span class="dot"></span> Global NVLink clusters</div>
+            <div class="bullet"><span class="dot"></span> 99.99% SLA</div>
+            <div class="bullet"><span class="dot"></span> Usage-based billing</div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="glass-panel">
+            <div class="panel-header">
+              <span class="status-dot"></span>
+              <span>provision a100 x8</span>
+            </div>
+            <div class="code">
+<pre><code>$ novagpu create --type a100x8 --region fra
+? Reserved capacity   2.1s
+? Attached NVMe        0.8s
+? Pulled image         4.2s
+? Node ready           0.6s
+
+Instance id: gpu_4f9c... Ready.</code></pre>
+            </div>
+          </div>
+          <div class="orbit">
+            <span class="orbit-dot"></span>
+            <span class="orbit-dot"></span>
+            <span class="orbit-dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logos">
+      <div class="container logos-inner">
+        <span class="logo-pill">Trusted by AI teams</span>
+        <div class="logo-row">
+          <div class="logo-shape" aria-label="Brand"></div>
+          <div class="logo-shape" aria-label="Brand"></div>
+          <div class="logo-shape" aria-label="Brand"></div>
+          <div class="logo-shape" aria-label="Brand"></div>
+          <div class="logo-shape" aria-label="Brand"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-head">
+          <h2>Purpose-built for training and inference</h2>
+          <p>Provision bare metal performance with cloud simplicity. Minimal latency, maximal throughput.</p>
+        </div>
+        <div class="grid features-grid">
+          <article class="card">
+            <div class="icon gradient-ring"></div>
+            <h3>Top-tier GPUs</h3>
+            <p>H100, A100, and L40S with dedicated memory bandwidth and guaranteed clocks.</p>
+          </article>
+          <article class="card">
+            <div class="icon gradient-ring"></div>
+            <h3>NVLink & InfiniBand</h3>
+            <p>Scale to multi-node training with 3.2 Tbps fabric and sub-2?s latency.</p>
+          </article>
+          <article class="card">
+            <div class="icon gradient-ring"></div>
+            <h3>Fast storage</h3>
+            <p>Local NVMe scratch plus S3-compatible buckets tuned for shard fanout.</p>
+          </article>
+          <article class="card">
+            <div class="icon gradient-ring"></div>
+            <h3>Global regions</h3>
+            <p>US, EU, and APAC regions with anycast endpoints for consistent latency.</p>
+          </article>
+          <article class="card">
+            <div class="icon gradient-ring"></div>
+            <h3>Predictable pricing</h3>
+            <p>Simple hourly rates. No egress surprises. Free first 25GB per month.</p>
+          </article>
+          <article class="card">
+            <div class="icon gradient-ring"></div>
+            <h3>DX that just works</h3>
+            <p>CLI, SDKs, and Terraform provider. First GPU in under a minute.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="benchmarks">
+      <div class="container">
+        <div class="section-head">
+          <h2>Measured in real workloads</h2>
+          <p>Transparent benchmarks on popular models and tokenizers.</p>
+        </div>
+        <div class="grid bench-grid">
+          <div class="bench-card">
+            <div class="bench-title">Llama 3.1 70B Inference</div>
+            <div class="bench-bar"><span style="width: 92%"></span></div>
+            <div class="bench-meta"><span>92 tok/s</span><span>A100x8</span></div>
+          </div>
+          <div class="bench-card">
+            <div class="bench-title">Mistral 7B Inference</div>
+            <div class="bench-bar"><span style="width: 98%"></span></div>
+            <div class="bench-meta"><span>232 tok/s</span><span>H100</span></div>
+          </div>
+          <div class="bench-card">
+            <div class="bench-title">ViT-Base Training</div>
+            <div class="bench-bar"><span style="width: 88%"></span></div>
+            <div class="bench-meta"><span>1.88x vs baseline</span><span>IB 400G</span></div>
+          </div>
+          <div class="bench-card">
+            <div class="bench-title">SDXL Inference</div>
+            <div class="bench-bar"><span style="width: 85%"></span></div>
+            <div class="bench-meta"><span>38 img/min</span><span>L40S</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <h2>Simple, fair pricing</h2>
+          <p>Pay only for what you use. Toggle monthly for committed discounts.</p>
+        </div>
+        <div class="price-toggle" role="tablist" aria-label="Billing interval">
+          <button class="toggle-btn active" data-interval="hourly" role="tab" aria-selected="true">Hourly</button>
+          <button class="toggle-btn" data-interval="monthly" role="tab" aria-selected="false">Monthly</button>
+        </div>
+        <div class="grid price-grid" data-interval="hourly">
+          <div class="price-card">
+            <h3>H100</h3>
+            <p class="price"><span class="price-value" data-hourly="$6.50" data-monthly="$2,400">$6.50</span><span class="unit">/hr</span></p>
+            <ul class="features-list">
+              <li>80GB HBM3</li>
+              <li>NVLink 900GB/s</li>
+              <li>PCIe Gen5</li>
+            </ul>
+            <a class="btn btn-solid" href="#cta">Start</a>
+          </div>
+          <div class="price-card popular">
+            <div class="pill">Popular</div>
+            <h3>A100</h3>
+            <p class="price"><span class="price-value" data-hourly="$3.20" data-monthly="$1,150">$3.20</span><span class="unit">/hr</span></p>
+            <ul class="features-list">
+              <li>80GB HBM2e</li>
+              <li>NVLink 600GB/s</li>
+              <li>Optional IB</li>
+            </ul>
+            <a class="btn btn-solid" href="#cta">Start</a>
+          </div>
+          <div class="price-card">
+            <h3>L40S</h3>
+            <p class="price"><span class="price-value" data-hourly="$1.10" data-monthly="$399">$1.10</span><span class="unit">/hr</span></p>
+            <ul class="features-list">
+              <li>48GB GDDR6</li>
+              <li>TensorRT-LLM tuned</li>
+              <li>Great for diffusion</li>
+            </ul>
+            <a class="btn btn-solid" href="#cta">Start</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <h2>Loved by fast-moving teams</h2>
+          <p>We obsess over simplicity, speed, and reliability.</p>
+        </div>
+        <div class="grid testi-grid">
+          <blockquote class="testi">
+            <p>We moved our inference stack in a day. Latency dropped and throughput doubled.</p>
+            <footer>? Priya N., Head of ML</footer>
+          </blockquote>
+          <blockquote class="testi">
+            <p>Provisioning a GPU went from 45 minutes to under one minute. Unreal.</p>
+            <footer>? James K., CTO</footer>
+          </blockquote>
+          <blockquote class="testi">
+            <p>Transparent pricing and rock-solid performance. Exactly what we needed.</p>
+            <footer>? Lina S., Founder</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>Frequently asked questions</h2>
+          <p>Everything you need to know about NovaGPU.</p>
+        </div>
+        <div class="accordion" role="region" aria-label="FAQ list">
+          <details>
+            <summary>How fast can I get a GPU?</summary>
+            <div class="content">Most instances provision in under 30 seconds, including image pull.</div>
+          </details>
+          <details>
+            <summary>Do you support Kubernetes?</summary>
+            <div class="content">Yes. We offer a managed K8s control plane and a Terraform provider.</div>
+          </details>
+          <details>
+            <summary>What about data egress?</summary>
+            <div class="content">First 25GB per month are free; afterwards a flat $0.02/GB.</div>
+          </details>
+          <details>
+            <summary>Is there a free tier?</summary>
+            <div class="content">New accounts receive credits equivalent to 10 GPU hours.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-copy">
+            <h2>Talk to us</h2>
+            <p>Need reserved capacity, custom networking, or enterprise SLAs? Our solutions team can help.</p>
+          </div>
+          <form class="contact-form" onsubmit="event.preventDefault(); document.querySelector('.contact .note').classList.add('show');">
+            <label>
+              <span>Your email</span>
+              <input type="email" placeholder="you@company.com" required />
+            </label>
+            <label>
+              <span>Your message</span>
+              <textarea rows="4" placeholder="Tell us about your workload..."></textarea>
+            </label>
+            <button class="btn btn-solid" type="submit">Send</button>
+            <p class="note" aria-live="polite">Thanks! We'll be in touch shortly.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="left">
+        <a href="#" class="brand">
+          <span class="logo small"></span>
+          <span class="brand-name">NovaGPU</span>
+        </a>
+        <p class="foot-note">? <span id="year"></span> NovaGPU, Inc. All rights reserved.</p>
+      </div>
+      <div class="right">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#benchmarks">Benchmarks</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
